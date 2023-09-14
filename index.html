@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Car Company</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <a><img src="images/logo1x.png" alt="logo" width="60" height="45.455" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+            <h1>Joon Car Company</h1>
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Learn</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Implement</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main>
+            <picture class="hero">
+                <source media="(min-width:300px) and (max-width:699px)" srcset="images/small-heroImage.webp">
+                <source media="(min-width:700px) and (max-width:1099px)" srcset="images/medium-heroImage.webp">
+                <source media="(min-width:1100px) and (max-width:1500px)" srcset="images/large-heroImage.webp">
+                <img src="images/heroImage.webp" alt="car" width="16" height="9">
+            </picture>
+
+            <h2>My Video with Captions</h2>
+
+            <video controls>
+                <source src="media/Trimmed_hb.mp4" type="video/mp4" />
+                <source src="media/Trimmed_hb.webm" type="video/webm" />
+                <track
+                  label="English"
+                  kind="subtitles"
+                  srclang="en"
+                  src="media/JoonCarCompay-en.vtt"
+                  default />
+                <track
+                  label="Español"
+                  kind="subtitles"
+                  srclang="es"
+                  src="media/JoonCarCompany-es.vtt" />
+              </video>
+
+              <details>
+                <summary>Video Tracnscript</summary>
+                <p>Hello and thank you for considering Joon car company for your next car purchase. When it comes to buying a car there are several crucial factors to keep in mind. Firstly, set a clear budget consider what type of car you want and how much you can comfortably invest. Secondly, think about the features and options you need Consider aspects like safety fuel efficiency and space as you make your vehicle selection. Thirdly, decide whether you want a new car or used car used cars may offer cost savings while new cars come with modern features.<br>
+                Keep these considerations in mind when making your decision at Joon car company we are here to assist you in finding the perfect vehicle.</p>
+              </details>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <p>&copy; <span id="year">x</span> &bull; Joonsung</p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
